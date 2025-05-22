@@ -1,0 +1,7 @@
+.env/
+.venv/
+db.sqlite3/
+makefile/
+.idea/
+templates/
+/apps/migrations/
