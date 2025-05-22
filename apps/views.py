@@ -71,7 +71,7 @@ class UserProfileView(APIView):
 
 @extend_schema(tags=['interviews'])
 class GenerateInterviewQuestionsView(APIView):
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
     serializer_class = GenerateQuestionsSerializer
 
     def post(self, request):
